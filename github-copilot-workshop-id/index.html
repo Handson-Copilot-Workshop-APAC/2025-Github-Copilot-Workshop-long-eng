@@ -220,26 +220,27 @@
 <p>This additional context will help Copilot provide more relevant suggestions and assistance throughout the development process.</p>
 <p>Feel free to ask this Space more about the Pomodoro technique, the project itself and any related topics.</p>
 
-<h2 is-upgraded>Architecture Request</h2>
-<p class="image-container"><img alt="Request" src="img/657b3296b53e47fb.png"></p>
-<p>In the next chat, attach the screenshot image <code>new_pomodoro_ss.png</code> and enter this prompt:</p>
+<h2 is-upgraded>Define the Project Architecture</h2>
+<p>Now, let's transition to our IDE, and ask Copilot to suggest an architecture for our Pomodoro timer web app.</p>
+<p>In Copilot Chat, attach the screenshot image <code>new_pomodoro_ss.png</code> (available in your repository) and enter the following prompt:</p>
 <pre><code language="language-text" class="language-text">We plan to create a simple Pomodoro timer web app in this project to learn the aspects of Github Copilot. The attached image is a UI mock for that app. What design should we proceed with to create this app using Flask and HTML/CSS/JavaScript?
 I want the timer functionality to be handled on the frontend using JavaScript. The backend should serves the HTML page and static assets, and to store the status of ongoing or finished sessions in a log file.
 Please suggest an architecture.
 </code></pre>
-<p>Copilot then returns with the suggestions:</p>
+<p class="image-container"><img alt="Request" src="img/657b3296b53e47fb.png"></p>
+<p>Copilot then returns with a similar suggestion:</p>
 <p class="image-container"><img alt="Suggestions" src="img/258842a83f80b203.png"></p>
-<h2 is-upgraded>Architectural Suggestion</h2>
-<p>Rather than starting implementation immediately, let&#39;s consult with Copilot about what approach and design to proceed with. From here on, we&#39;ll proceed entirely in agent mode.</p>
-<p>Ask Copilot to save the conclusion from the chat above as a file <code>architecture.md</code>. Download the file and store it on the root of our project.</p>
-<p>By doing so, you can reference the same architectural content even if you open a different chat session, both in VSCode or Copilot online.</p>
+<h2 is-upgraded>Document Project Architecture</h2>
+<p>Rather than starting implementation immediately, we can continue to consult with Copilot about the approach and design to proceed with.</p>
+<p>In Agent Mode,ask Copilot to save the suggestions from our architecture discussion into an <code>architecture.md</code> file and store this file in the root of your project.</p>
+<p>By doing so, you have documented the intended architecture, and provided clear implementation instructions to Copilot which will be available across chat sessions, both in VSCode and Copilot on GitHub.com.</p>
 <p class="image-container"><img alt="Architecture" src="img/cca9c8c7e64a15d5.png"></p>
 
 
       </google-codelab-step>
     
       <google-codelab-step label="Planning The Application" duration="10">
-        <p>In using Copilot it is not recommended to try implement a large feature all at once. It is better to start implementing in small increments. This improves the accuracy of the code Copilot suggests and allows for smoother development progress.</p>
+        <p>When leveraging GitHub Copilot for complex implementations, it is recommended to begin in small increments. This improves the accuracy of the code Copilot suggests and allows for smoother development progress.</p>
 <p>Let&#39;s go back to VSCode. Now let&#39;s add one more document to help the agents create the application accurately and efficiently. This approach is known as <a href="https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/" target="_blank">Spec-Driven Development</a>, a highly recommended technique in developing software with AI.</p>
 <ol type="1">
 <li>Type <code>#</code> in the chat field and write the name of the architecture document: <code>architecture.md</code>.</li>
@@ -254,7 +255,7 @@ Please suggest what granularity should be used to implement functions in an easy
 </aside>
 <p>Change to <code>Agent</code> mode and prompt: &#34;Save the development plan in a file called <code>plan.md</code>.&#34; (or you can always do that manually). Don&#39;t forget to click &#34;Keep&#34; to save the changes.</p>
 <p class="image-container"><img alt="Planning" src="img/b1b472ffadbc11e5.png"></p>
-<p>Now we have two specifications file: <code>architecture.md</code> and <code>plan.md</code>. These will be the documents Copilot refer to in developing the Pomodoro app.</p>
+<p>Now we have two specification files: <code>architecture.md</code> and <code>plan.md</code>. These files will guide Copilot in developing the Pomodoro app.</p>
 <aside class="special"><p>When a conversation with Copilot Chat reaches a conclusion, you can give clearer instructions to Copilot by starting a new conversation. To start a new conversation, click the &#34;New conversation&#34; button at the top of the chat window. At that time, content you want to reference in future chats, like the architectural content this time, is convenient to write out and save to files as we did here.</p>
 </aside>
 
