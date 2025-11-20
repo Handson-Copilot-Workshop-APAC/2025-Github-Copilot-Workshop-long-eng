@@ -392,13 +392,13 @@ Focus on the following instructions:
     
       <google-codelab-step label="Unit Tests" duration="15">
 <h2 is-upgraded>Create Unit Tests</h2>
-<p>We can ask Copilot to create unit tests. For example, we can enter this prompt to do that:</p>
+<p>We can ask Copilot to write unit tests for us. Try using the following prompt to write unit tests for our project:</p>
 <pre><code language="language-text" class="language-text">We want to add unit testing to this project.
 Please create unit tests for all the important functions in this application.
 Install necessary libraries to support this change.
 Then in the readme file, add explanation on how to run the unit tests.
 </code></pre>
-<p>As we can see below, Copilot created a to-do list to complete the task from the previous prompt. Using the custom instruction we have added in the previous slide, Copilot first check the architecture document to provide a more accurate solution.</p>
+<p>As engineers would, GitHub Copilot breaks large tasks down into a to-do list for better assimilation and tracking. It also uses the custom instructions that we added in the previous slide in addition to referring to our architecture document to provide a more accurate solution.</p>
 <p class="image-container"><img alt="Unit test request" src="img/98effe6470e40459.png"></p>
 <p>We can ask Copilot to run the test from the Chat panel. This way it will check the result from the terminal automatically and make adjustments as necessary. We can always do it manually by referring to the added section in the readme file.</p>
 <p class="image-container"><img alt="Unit test result" src="img/17d4ce778a3947c9.png"></p>
@@ -406,16 +406,16 @@ Then in the readme file, add explanation on how to run the unit tests.
 
       </google-codelab-step>
     
-      <google-codelab-step label="Github Copilot Online" duration="10">
-        <p>Copilot is also available on Github&#39;s website. Click on <a href="https://github.com/copilot/" target="_blank">this link</a> to open Copilot on Github.</p>
+      <google-codelab-step label="Github Copilot across GitHub.com" duration="10">
+        <p>Copilot is also available on github.com. Click on <a href="https://github.com/copilot/" target="_blank">this link</a> to open Copilot on Github.</p>
 <p class="image-container"><img alt="Copilot Online" src="img/a7c200d9745d6129.png"></p>
-<p>Let&#39;s see some of the things Copilot can do for us in the Github website.</p>
-<h2 is-upgraded>1. Add PR Description</h2>
+<p>Let's explore how we can leverage GitHub Copilot across the GitHub platform.</p>
+<h2 is-upgraded>1. Request Copilot to add PR descriptions</h2>
 <p>We can ask Copilot to add Pull Request description.</p>
 <p class="image-container"><img alt="Request PR summary" src="img/18ffabfac342e07b.png"></p>
 <p>It will create a comprehensive PR description based on the commits in the branch that we wanted to merge.</p>
 <p class="image-container"><img alt="PR summary result" src="img/ef2ee5de09cd6b76.png"></p>
-<h2 is-upgraded>2. Add As PR Reviewer</h2>
+<h2 is-upgraded>2. Request Copilot to review your PR</h2>
 <p>We can also add Copilot as a reviewer to a Pull Request. Very handy if you&#39;re working solo on a project.</p>
 <p>After pushing, let&#39;s create a Pull Request on GitHub.com and utilize Copilot&#39;s code review functionality.</p>
 <ol type="1">
@@ -440,12 +440,12 @@ Then in the readme file, add explanation on how to run the unit tests.
 
       </google-codelab-step>
     
-      <google-codelab-step label="Automatic Issue Creation and Coding Agent" duration="15">
-        <p>Let&#39;s use the website version of GitHub Copilot to automatically generate project improvement suggestions as Issues and utilize Coding Agent.</p>
-<h2 is-upgraded>Automatic Issue Creation with GitHub Copilot</h2>
+      <google-codelab-step label="From Idea to Implementation with GitHub Copilot" duration="15">
+        <p>Let us now use GitHub Copilot on the GitHub platform to suggest project improvements, document these as GitHub Issues and leverage the Copilot Coding Agent to delegate the implementation of these ideas to AI.</p>
+<h2 is-upgraded>Create a plan with GitHub Issues</h2>
 <ol type="1">
-<li>Access <strong>GitHub.com</strong> and click the <strong>Copilot</strong> icon in the top right</li>
-<li>Confirm your repository is added to the Chat context</li>
+<li>Access Copilot Chat on <strong>GitHub.com</strong> by clicking the <strong>Copilot</strong> icon in the top right</li>
+<li>Confirm that your repository is added to the chat context</li>
 <li>Enter the following prompt:</li>
 </ol>
 <pre><code>Please create 3 issues to customize the Pomodoro timer.
@@ -474,22 +474,22 @@ Streak display: Consecutive day count display
 Test purpose: Measure the impact of gamification elements on motivation maintenance and continued use
 </code></pre>
 <p class="image-container"><img alt="Issue Creation with GitHub Copilot" src="img/a6b65e33dc2c47bf.png"></p>
-<h2 is-upgraded>Issue Creation and Coding Agent Assignment</h2>
+<h2 is-upgraded>Create the Issues and delegate them to the Copilot Coding Agent</h2>
 <ol type="1">
 <li><strong>Copilot automatically generates 3 Issues</strong></li>
 <li>Review the content of each Issue and edit as necessary</li>
 <li>Click the <strong>Create</strong> button on each Issue to create them</li>
-<li>After transitioning to the Issue screen, select <strong>Copilot</strong> in the <strong>Assignees</strong> section to assign the Coding Agent</li>
+<li>After transitioning to the Issue screen, select <strong>Copilot</strong> in the <strong>Assignees</strong> section to assign the Coding Agent to this issue. This will allow the Copilot Coding Agent to start working on the implementation asynchronously.</li>
 </ol>
 <p class="image-container"><img alt="Assign Coding Agent to Issue" src="img/613355f2901aedd2.png"></p>
 <h2 is-upgraded>Expected Pull Request Results</h2>
-<p>When Coding Agent is assigned, the following results can be expected:</p>
+<p>When the Copilot Coding Agent is assigned to an issue, the following results can be expected:</p>
 <ul>
-<li><strong>Automatic Code Implementation</strong>: Function implementation based on each Issue&#39;s requirements</li>
-<li><strong>Pull Request Creation</strong>: Automatic PR creation after implementation completion</li>
-<li><strong>Comprehensive Testing</strong>: Including both unit tests and UI tests</li>
+<li><strong>Autonomous, Asynchronous Implementation</strong>: Copilot will independently work on the issue, implementing the required features or fixes without manual intervention.</li>
+<li><strong>Pull Request Creation</strong>: Copilot will automatically create a pull request summarizing the changes made to address the issue.</li>
+<li><strong>Comprehensive Testing</strong>: Copilot performs both unit tests and UI tests to ensure the quality and functionality of the implemented features.</li>
 </ul>
-<aside class="special"><p><strong>Utilizing MCP Server</strong>: GitHub MCP Server and Playwright MCP Server are included as initial settings in Coding Agent. This allows not only unit testing but also automatic UI checking through screenshots. Coding Agent visually verifies that implemented functions work as expected and provides higher quality code.</p>
+<aside class="special"><p><strong>Utilizing MCP Server</strong>: GitHub MCP Server and Playwright MCP Server are available by default with the Copilot Coding Agent. This allows the Coding Agent to visually verify that implemented functions work as expected and provides higher quality code.</p>
 </aside>
 
 
